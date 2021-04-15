@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/yulduzetta/food-festival#readme",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "webpack": "^5.32.0",
+    "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
