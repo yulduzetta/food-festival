@@ -172,5 +172,15 @@
       Rights Reserved.</div>
   </footer>
 </body>
+<script>
+  (function () { // immidiately invoked function expression IIFE
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully."))
+        .catch(error => console.log("Service Worker registration failed:", error));
+    }
+  })(); // () here immidiately invokes the function right away
+</script>
 
 </html>
